@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Bar id="idFooterBarMain" design="Footer">
+		<contentLeft>
+			<Image src="{images>/customerFooterLogo}" densityAware="false"/>
+			<Text text="{labels>application.customer.info}" level="H2"/>
+		</contentLeft>
+		<contentMiddle>
+		</contentMiddle>
+		<contentRight>
+			<Text text="{labels>application.supplier.info}" level="H2"/>
+			<Image src="{images>/supplierFooterLogo}" densityAware="false"/>
+		</contentRight>
+	</Bar>
+</core:FragmentDefinition>

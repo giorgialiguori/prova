@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mvc:View
+    controllerName="com.giorgia.provaUI5.controller.personalArea.Settings"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m"
+    class="viewPadding">
+
+<Page showNavButton="true"
+navButtonPress="handleNavButtonPress"
+title="{labels>genericAltroPageTitle}"
+titleLevel="H1">
+</Page>
+
+    </mvc:View>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mvc:View
+    controllerName="com.giorgia.provaUI5.controller.personalArea.Settings"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m"
+    class="viewPadding">
+
+    <Page
+        showNavButton="true"
+        navButtonPress="handleNavButtonPress"
+        class="sapUiContentPadding"
+        title="{labels>userSettingPageTitle}"
+        titleLevel="H1">
+        <content>
+            <f:SimpleForm id="idUserSettingForm" width="auto" editable="true" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" maxContainerCols="2" labelSpanL="2" labelSpanM="2" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+                <f:content>
+                    <core:Title text="{labels>userSetting.options.visibleList}" level="H4"/>
+                    <Label text="{labels>userSetting.options.rowCount}" design="Bold" labelFor="idListRowCount"/>
+                    <Text id="idListRowCount" text="{app>/userSettingOptionForm/visibleListRowCount}"/>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <content>
+              <f:SimpleForm  width="auto" editable="false" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" maxContainerCols="2" labelSpanL="2" labelSpanM="2" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+                <f:content>
+                    <core:Title text="{labels>userProfile.profile.title}" level="H4"/>
+                    <Label text="{labels>userProfile.name}" design="Bold" labelFor="idSetName"/>
+                    <Text id="idSetName" text="{app>/userProfile/name}"/>
+                    <Label text="{labels>userProfile.surname}" design="Bold" labelFor="idSetSurname"/>
+                    <Text id="idSetSurname" text="{app>/userProfile/surname}"/>
+                    <Label text="{labels>userProfile.cid}" design="Bold" labelFor="idSetCid"/>
+                    <Text id="idSetCid" text="{app>/userProfile/cid}"/>
+                    <Label text="{labels>userProfile.division}" design="Bold" labelFor="idSetDivision"/>
+                    <Text id="idSetDivision" text="{app>/userProfile/division}"/>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

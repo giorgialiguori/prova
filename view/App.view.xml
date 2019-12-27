@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mvc:View
+	controllerName="com.giorgia.provaUI5.controller.App" displayBlock="true"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified"
+    xmlns="sap.m"
+	class="viewPadding">
+
+	<u:Shell id="appShell" icon="{images>/customerHeaderLogo}">
+		<u:headItems>
+			<u:ShellHeadItem tooltip="{app>/configMenu/configuration}" icon="sap-icon://menu2" visible="false" press="handleConfigurationPress"/>
+			<u:ShellHeadItem tooltip="{app>/configMenu/personalArea}" icon="sap-icon://menu2" visible="{app>/headerVisibleButton/parea}" press="handlePersonalAreaPress"/>
+			<u:ShellHeadItem tooltip="{app>/configMenu/home}" icon="sap-icon://home" visible="{app>/headerVisibleButton/harea}" press="handleHomePress"/>
+		</u:headItems>
+		<u:search>
+			<FlexBox justifyContent="Center">
+				<items>
+					<Image src="{images>/productHeaderLogo}" densityAware="false"/>
+				</items>
+			</FlexBox>
+		</u:search>
+		<u:headEndItems>
+			<u:ShellHeadItem icon="sap-icon://log" tooltip="{mcb_labels>application.logoff}" visible="{app>/headerVisibleButton/larea}" press="handleLogoffPress"/>
+		</u:headEndItems>
+		<u:user>
+			<u:ShellHeadUserItem image="sap-icon://person-placeholder" username="{app>/userProfile/name} {app>/userProfile/surname}" showPopupIndicator="{app>/headerVisibleButton/uarea}" press="handleUserItemPress"/>
+		</u:user>
+		<core:Fragment fragmentName="com.giorgia.provaUI5.view.include.BusyDialog" type="XML"/>
+		<App id="idAppRoot">
+			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Access" id="idViewAccess"/>
+			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Menu" id="idViewMenu"/>
+      <mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Overview" id="idViewOverview"/>
+			<mvc:XMLView viewName="com.giorgia.provaUI5.view.personalArea.Settings" id="idViewSettings"/>
+			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Altro" id="idViewAltro"/>
+		</App>
+		<core:Fragment fragmentName="com.giorgia.provaUI5.view.include.Footer" type="XML"/>
+	</u:Shell>
+
+</mvc:View>

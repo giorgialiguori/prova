@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mvc:View
+    controllerName="com.giorgia.provaUI5.controller.generic.Access"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m"
+	class="viewPadding">
+
+	<Page
+		showHeader="false"
+		enableScrolling="false">
+		<TileContainer
+			id="container"
+			tiles="{app>/accessMenu}">
+			<StandardTile
+				icon="{app>icon}"
+				type="{app>type}"
+				number="{app>number}"
+				numberUnit="{app>numberUnit}"
+				title="{app>title}"
+				info="{app>info}"
+				infoState="{app>infoState}"
+				press="handleTilePress"/>
+		</TileContainer>
+        <core:Fragment fragmentName="com.giorgia.provaUI5.view.include.BusyDialog" type="XML"/>
+	</Page>
+
+</mvc:View>

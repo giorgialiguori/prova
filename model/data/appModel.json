@@ -1,0 +1,219 @@
+{
+	"applicationGuide" : {
+		"applicationSummary" : "<p>Applicazione Base UI5. Le macro funzionalità usufruibili sono:</p><ul><li><h6>Gestione pagina singola</h6></li><li><h6>Gestione Master Page e Detail Page</h6></li><li><h6>Area Personale</h6></li></ul>",
+		"masterPageManagment" : "<p>Gestione Master Page e Detail Page</p>",
+		"singlePageManagment" : "<p>Gestione singola pagina</p>",
+		"personalArea" : "<p>Nell'area personale è indicato il numero di risultati visibili relativi ad una ricerca ed i propri dati personali</p>"
+	},
+
+	"appType": 0,
+
+	"userProfileType": [
+        {
+            "code": "employee",
+            "name": "MCB_R"
+        },
+        {
+            "code": "manager",
+            "name": "MCB_M"
+        }
+    ],
+
+	"userProfiles": {
+		"employee": "MCB_R",
+		"manager": "MCB_M"
+	},
+
+	"userProfile": {
+	},
+
+	"backupUserProfile": {
+	},
+
+
+	"userProfileTemplate": {
+		"username": "",
+		"cid": "",
+		"division": "",
+		"profile": "",
+		"name": "",
+		"surname": "",
+    	"creationGuest":""
+	},
+
+	"basicConfig" : {
+		"float" : {
+      		"decimals" : 3
+		},
+		"date" : {
+			"valueFormat" : "dd.MM.yyyy",
+			"displayFormat" : "dd.MM.yyyy"
+		},
+		"datetime" : {
+			"valueFormat" : "dd.MM.yyyy HH:mm:ss",
+			"displayFormat" : "dd.MM.yyyy HH:mm:ss"
+		}
+	},
+
+	"defaultRendering" : {
+		"minScreenWidth": "Tablet",
+		"demandPopin": true,
+		"popinDisplay": "Block"
+	},
+
+	"placeholder": {
+		"placeholderDate": "giorno mese anno",
+		"placeholderNote": "Note ....."
+	},
+
+	"userSettingOptionForm": {
+        "visibleListRowCount": ""
+    },
+
+    "userSettingOptions": {
+        "visibleListRowCount": 10
+    },
+
+    "backupUserSettingOptions": {
+    },
+
+	"configMenu" : {
+		"configuration" : "Configurazione",
+		"personalArea" : "Area Personale",
+		"home" : "Home"
+	},
+
+	"operationMenu" : [
+	],
+
+	"accessMenu" : [
+		{
+			"icon" : "sap-icon://meal",
+			"title" : "provaUI5",
+			"info" : "Applicazione",
+			"infoState" : "Success",
+			"idPage": "idViewMenu"
+		}
+	],
+
+	"basicOperationMenu" : [
+		{
+			"icon" : "sap-icon://hint",
+			"title" : "Guida",
+			"info" : "...",
+			"idPage": "idViewOverview"
+		}
+ 	],
+
+	"managerOperationMenu" : [
+		{
+			"icon" : "sap-icon://meal",
+			"title" : "Master Page",
+			"info" : "...",
+			"infoState" : "Success",
+			"idPage": "idViewManager"
+		},
+		{
+			"icon" : "sap-icon://meal",
+			"title" : "Single Page",
+			"info" : "...",
+			"infoState" : "Success",
+			"idPage": "idViewOperator"
+		},
+		{
+			"icon" : "sap-icon://hint",
+			"title" : "Guida",
+			"info" : "...",
+			"idPage": "idViewOverview"
+		}
+	],
+
+	"employeeOperationMenu" : [
+		{
+			"icon" : "sap-icon://paper-plane",
+			"title" : "Pagina",
+			"info" : "...",
+			"infoState" : "Success",
+			"idPage": "idViewOperator"
+		},
+		{
+			"icon" : "sap-icon://hint",
+			"title" : "Guida",
+			"info" : "...",
+			"idPage": "idViewOverview"
+		},
+		{
+			"icon" : "sap-icon://user-settings",
+			"title" : "Impostazioni",
+			"info" : "...",
+			"idPage": "idViewSettings"
+		},
+		{
+			"icon" : "sap-icon://locate-me",
+			"title" : "Altro",
+			"info" : "...",
+			"idPage": "idViewAltro"
+		}
+	],
+
+	"personalMenu" : [
+		{
+			"icon" : "sap-icon://user-settings",
+			"title" : "Impostazioni",
+			"info" : "...",
+			"infoState" : "Success",
+			"idPage": "idViewSettings"
+		}
+	],
+
+	"headerVisibleButton": {
+		"parea": false,
+		"harea": false,
+		"larea": false,
+		"uarea": false
+	},
+
+	"operationResults": {
+		"yes": "OK",
+		"no": "CANCEL"
+	},
+
+    "standardPageNavigation": {
+        "navTo": true,
+        "navBack": true
+    },
+
+  	"userProfileMock": {
+      "usrname": "mrossi",
+      "cid": "00000001",
+      "werks": "D001",
+      "profile": "MCB_R",
+      "nome": "MARIO",
+      "cognome": "ROSSI",
+      "creationGuest": true
+  	},
+
+	"managerRequestConfig" : {
+		"initialCode": "1000000025",
+		"emptyCode": "----------",
+		"pageTitle": "",
+		"personalListItems": 0,
+		"masterListItems": 0,
+		"detailListItems": 0,
+		"minVisibleListRowCount": 10,
+		"defaultAttachmentImage": "sap-icon://document"
+	},
+
+	"employeeRequestConfig" : {
+		"initialCode": "1000000025",
+		"emptyCode": "----------",
+		"pageTitle": "",
+		"personalListItems": 0,
+		"masterListItems": 0,
+		"detailListItems": 0,
+		"minVisibleListRowCount": 10,
+		"defaultAttachmentImage": "sap-icon://document"
+	}
+
+
+}
