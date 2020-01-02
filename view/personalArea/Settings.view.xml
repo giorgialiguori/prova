@@ -17,7 +17,7 @@
         <content>
           <Panel expandable="false"
               expanded="true"
-              width="30rem"
+              width="10rem"
               class="sapUiResponsiveMargin">
               <content>
 
