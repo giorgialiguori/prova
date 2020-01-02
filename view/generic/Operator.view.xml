@@ -38,7 +38,7 @@
   					</layoutData>
   				</Image>
   				<VBox class="sapUiSmallMarginBegin">
-            <Title text="OpenUI5"/>
+            <Title text="OpenUI5" />
             <Text text="OpenUI5 è un framework di applicazioni JavaScript progettato per
               creare applicazioni multipiattaforma, reattive e pronte per l'azienda. È un progetto open source
               gestito da SAP SE disponibile con licenza Apache 2.0 e aperto a contribut"/>

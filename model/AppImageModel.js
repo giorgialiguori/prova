@@ -24,11 +24,11 @@ sap.ui.define(
 			 */
 			createInstance: function() {
 				var oModel = new JSONModel({
-					customerHeaderLogo: jQuery.sap.getModulePath(pPackage, '/') + "images/RWMI.png",
+					customerHeaderLogo: jQuery.sap.getModulePath(pPackage, '/') + "images/images.png",
 					customerFooterLogo: jQuery.sap.getModulePath(pPackage, '/') + "images/RWMICompany.png",
 					supplierHeaderLogo: jQuery.sap.getModulePath(pPackage, '/') + "images/Poema.png",
 					supplierFooterLogo: jQuery.sap.getModulePath(pPackage, '/') + "images/Poema.png",
-					productHeaderLogo: 	jQuery.sap.getModulePath(pPackage, '/') + "images/RWMIApps.png",
+					productHeaderLogo: 	jQuery.sap.getModulePath(pPackage, '/') + "images/UI5.png",
 					productFooterLogo: 	jQuery.sap.getModulePath(pPackage, '/') + "images/RWMIApps.png"
 				});
 				return oModel;
