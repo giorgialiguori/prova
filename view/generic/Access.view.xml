@@ -22,7 +22,10 @@
 				info="{app>info}"
 				infoState="{app>infoState}"
 				press="handleTilePress"/>
+
 		</TileContainer>
+
+
         <core:Fragment fragmentName="com.giorgia.provaUI5.view.include.BusyDialog" type="XML"/>
 	</Page>
 

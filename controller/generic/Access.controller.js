@@ -8,7 +8,8 @@ sap.ui.define([
 
     var accessController = sap.ui.controller("com.giorgia.provaUI5.controller.generic.Access", {
 
-    	onInit: function(oEvent) {},
+    	onInit: function(oEvent) {
+      },
 
         onBeforeRendering: function(oEvent) {},
 
@@ -30,6 +31,7 @@ sap.ui.define([
                 this.navigation.navTo(sPage, context);
             }
         },
+
 
         _handlePreLoading: function(oEvent) {
             var that = this;

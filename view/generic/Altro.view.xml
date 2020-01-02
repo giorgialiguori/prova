@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mvc:View
-    controllerName="com.giorgia.provaUI5.controller.personalArea.Settings"
+    controllerName="com.giorgia.provaUI5.controller.generic.Altro"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:vk="sap.ui.vk"
     xmlns="sap.m"
     class="viewPadding">
 
-<Page showNavButton="true"
-navButtonPress="handleNavButtonPress"
-title="{labels>genericAltroPageTitle}"
-titleLevel="H1">
+<Page
+   showNavButton="true"
+   navButtonPress="handleNavButtonPress">
+
+<SlideTile
+
+	  tiles="{app>/altroMenu}"
+    press="handleTilePress"
+    class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+      <GenericTile
+
+          backgroundImage=""
+				frameType="TwoByOne" press="handleTilePress">
+
+				<TileContent footer="30-12-2019">
+					<NewsContent
+						contentText="UI5"
+						subheader="Prova" />
+				</TileContent>
+			</GenericTile>
+
+      <GenericTile
+  backgroundImage="icon-normal.png"
+  frameType="TwoByOne" press="handleTilePress">
+  <TileContent footer="30-12-2019">
+    <NewsContent
+      contentText="Poema"
+      subheader="Azienda" />
+  </TileContent>
+</GenericTile>
+
+</SlideTile>
+
 </Page>
+
 
     </mvc:View>

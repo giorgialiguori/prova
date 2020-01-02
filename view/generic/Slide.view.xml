@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mvc:View
-    controllerName="com.giorgia.provaUI5.controller.generic.Overview"
+    controllerName="com.giorgia.provaUI5.controller.generic.Slide"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
@@ -8,31 +8,32 @@
 
     <Page showNavButton="true"
     navButtonPress="handleNavButtonPress"
-    title="{labels>genericOverviewPageTitle}"
     titleLevel="H1">
 
 
-        <Panel expandable="true"
+        <Panel expandable="false"
             expanded="true"
-            headerText="{labels>overview.summary.title}"
+            width ="5rem"
+
+            class="sapUiResponsiveMargin">
+            <content>
+
+              <ToolbarSpacer />
+              <Button tooltip="{app>/slideMenu/configuration}" icon="sap-icon://settings" press="handleSetButtonPress"/>
+            </content>
+        </Panel>
+        <Panel expandable="true"
+            expanded="false"
             width="auto"
             class="sapUiResponsiveMargin">
+
             <content>
 
             </content>
         </Panel>
         <Panel expandable="true"
             expanded="false"
-            headerText="{labels>overview.masterPage.title}"
-            width="auto"
-            class="sapUiResponsiveMargin">
-            <content>
 
-            </content>
-        </Panel>
-        <Panel expandable="true"
-            expanded="false"
-            headerText="{labels>overview.singlePage.title}"
             width="auto"
             class="sapUiResponsiveMargin">
             <content>
@@ -40,16 +41,7 @@
             </content>
         </Panel>
 
-        <Panel expandable="true"
-            expanded="false"
-            headerText="{labels>overview.personalArea.title}"
-            width="auto"
-            class="sapUiResponsiveMargin">
-            <content>
-
-            </content>
-
-        </Panel>
+        
     </Page>
 
 </mvc:View>

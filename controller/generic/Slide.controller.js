@@ -1,12 +1,3 @@
-/**
- * Settings controller
- *
- * @param jQuery
- * @param Controller
- * @param AppHelper
- * @param Helper
- * @returns
- */
 sap.ui.define([
     'jquery.sap.global',
     'sap/ui/core/mvc/Controller',
@@ -15,7 +6,7 @@ sap.ui.define([
 ], function(jQuery, Controller, AppHelper, Helper) {
     "use strict";
 
-    var altroController = Controller.extend("com.giorgia.provaUI5.controller.generic.Altro", {
+    var slideController = Controller.extend("com.giorgia.provaUI5.controller.generic.Slide", {
 
         onInit: function(oEvent) {},
 
@@ -25,19 +16,15 @@ sap.ui.define([
 
         onAfterRendering: function(oEvent) {},
 
-        onExit: function(oEvent) {},
-
         handleNavButtonPress: function(oEvent) {
             this.navigation.navBack();
         },
-        handleTilePress: function(oEvent) {
+        handleSetButtonPress: function(oEvent) {
           var that = this;
-          var context = oEvent.getSource().getBindingContext("app");
-          var selectedPage = context.getProperty("idPage");
-          var sPage = AppHelper.getPage(that, selectedPage);
+          var sPage = AppHelper.getSettingsPage(that);
+          var context = oEvent.getSource().getBindingContext();
           this.navigation.navTo(sPage, context);
         }
-    });
-
-    return altroController;
+});
+	return slideController;
 });

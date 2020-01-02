@@ -30,9 +30,12 @@
 		<App id="idAppRoot">
 			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Access" id="idViewAccess"/>
 			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Menu" id="idViewMenu"/>
+			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Operator" id="idViewOperator"/>
       <mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Overview" id="idViewOverview"/>
 			<mvc:XMLView viewName="com.giorgia.provaUI5.view.personalArea.Settings" id="idViewSettings"/>
 			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Altro" id="idViewAltro"/>
+			<mvc:XMLView viewName="com.giorgia.provaUI5.view.generic.Slide" id="idViewSlide"/>
+
 		</App>
 		<core:Fragment fragmentName="com.giorgia.provaUI5.view.include.Footer" type="XML"/>
 	</u:Shell>

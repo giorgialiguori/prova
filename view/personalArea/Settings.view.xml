@@ -5,6 +5,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.ui.layout.form"
     xmlns="sap.m"
+    xmlns:l="sap.f"
     class="viewPadding">
 
     <Page
@@ -14,6 +15,19 @@
         title="{labels>userSettingPageTitle}"
         titleLevel="H1">
         <content>
+          <Panel expandable="false"
+              expanded="true"
+              width="30rem"
+              class="sapUiResponsiveMargin">
+              <content>
+
+                <l:Avatar
+							           initials="MR"
+							           displaySize="XL"
+							           backgroundColor="TileIcon"/>
+              </content>
+          </Panel>
+
             <f:SimpleForm id="idUserSettingForm" width="auto" editable="true" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" maxContainerCols="2" labelSpanL="2" labelSpanM="2" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
                 <f:content>
                     <core:Title text="{labels>userSetting.options.visibleList}" level="H4"/>

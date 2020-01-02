@@ -45,8 +45,6 @@ sap.ui.define(
 	        /****** Gestione identificativi pagine *******/
 
 
-
-
 	        getPage: function(that, selectedPage) {
 	            var sPage = "idViewApp--" + selectedPage;
 	            return sPage;
@@ -62,6 +60,7 @@ sap.ui.define(
 	            return sPage;
 	        },
 
+
 	        getAccessPage: function(that) {
 	            var sPage = "idViewApp--idViewAccess";
 	            return sPage;
@@ -73,6 +72,10 @@ sap.ui.define(
 	        },
 					getAltroPage: function(that) {
 	            var sPage = "idViewApp--idViewAltro";
+	            return sPage;
+	        },
+					getSlidePage: function(that) {
+	            var sPage = "idViewApp--idViewSlide";
 	            return sPage;
 	        },
 
@@ -87,7 +90,7 @@ sap.ui.define(
 	        },
 
 
-	        getOpeatorPage: function(that) {
+	        getOperatorPage: function(that) {
 	            var sPage = "idViewApp--idViewOperator";
 	            return sPage;
 	        },

@@ -22,6 +22,7 @@ sap.ui.define(
 				var oList = that.getView().byId("idViewManager");
 				return oList;
 			},
+	
 
 		};
 	});

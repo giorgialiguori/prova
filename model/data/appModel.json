@@ -82,17 +82,39 @@
 		"personalArea" : "Area Personale",
 		"home" : "Home"
 	},
+	"slideMenu" : {
+		"configuration" : "Impostazioni"
+	},
+
+
 
 	"operationMenu" : [
 	],
 
 	"accessMenu" : [
 		{
-			"icon" : "sap-icon://meal",
+			"icon" : "sap-icon://activate",
 			"title" : "provaUI5",
 			"info" : "Applicazione",
 			"infoState" : "Success",
 			"idPage": "idViewMenu"
+		}
+	],
+
+	"altroMenu" : [
+		{
+			"icon" : "images.png",
+			"title" : "",
+			"info" : "...",
+			"infoState" : "",
+			"idPage": "idViewSlide"
+		},
+		{
+			"icon" : "icon-hires.png",
+			"title" : "",
+			"info" : "...",
+			"infoState" : "",
+			"idPage": "idViewSettings"
 		}
 	],
 
@@ -104,6 +126,7 @@
 			"idPage": "idViewOverview"
 		}
  	],
+
 
 	"managerOperationMenu" : [
 		{
@@ -131,7 +154,7 @@
 	"employeeOperationMenu" : [
 		{
 			"icon" : "sap-icon://paper-plane",
-			"title" : "Pagina",
+			"title" : "Immagini",
 			"info" : "...",
 			"infoState" : "Success",
 			"idPage": "idViewOperator"
