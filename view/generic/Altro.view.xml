@@ -15,7 +15,7 @@
    navButtonPress="handleNavButtonPress">
 
 <SlideTile
-
+    
 	  tiles="{app>/altroMenu}"
     press="handleTilePress"
     class="sapUiTinyMarginBegin sapUiTinyMarginTop">

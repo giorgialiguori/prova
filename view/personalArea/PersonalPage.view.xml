@@ -5,18 +5,58 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:vk="sap.ui.vk"
     xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
     xmlns="sap.m"
     xmlns:vbm="sap.ui.vbm"
+    xmlns:tnt="sap.tnt"
     class="viewPadding">
 
     <Page showNavButton="true"
     navButtonPress="handleNavButtonPress"
+    title="{labels>personalAreaMainPageTitle}"
     titleLevel="H1">
+    <Panel expanded="true"
+      width="100em">
+      <content>
 
+        <f:SimpleForm
+          width="50em"
+            height="1em">
 
-<Panel>
-    
+          <f:content>
+            <Image src="profilo.png" width="60em" />
+            <Label text="{labels>userProfile.name}" design="Bold" labelFor="idSetName"/>
+            <Text id="idSetName" text="{app>/userProfile/name}"/>
+            <Label text="{labels>userProfile.surname}" design="Bold" labelFor="idSetSurname"/>
+            <Text id="idSetSurname" text="{app>/userProfile/surname}"/>
+            <Label text="{labels>userProfile.cid}" design="Bold" labelFor="idSetCid"/>
+            <Text id="idSetCid" text="{app>/userProfile/cid}"/>
+            <Label text="{labels>userProfile.division}" design="Bold" labelFor="idSetDivision"/>
+            <Text id="idSetDivision" text="{app>/userProfile/division}"/>
+        </f:content>
+        </f:SimpleForm>
+        </content>
     </Panel>
+    <OverflowToolbar>
+      <SplitApp id="idPersonalPageManager">
+
+        <detailPages>
+
+    <VBox class="sapUiSmallMargin">
+      <Label text="Sezione 2" />
+
+    </VBox>
+</detailPages>
+<masterPages>
+			<Page
+				id="master"
+				title="Master"
+				icon="sap-icon://action"
+				class="sapUiStdPage">
+			</Page>
+      </masterPages>
+      </SplitApp>
+    </OverflowToolbar>
 
 
     <!--Panel
