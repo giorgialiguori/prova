@@ -17,7 +17,7 @@
         <content>
           <Panel expandable="false"
               expanded="true"
-              width="10rem"
+              width="30rem"
               class="sapUiResponsiveMargin">
               <content>
 
@@ -26,6 +26,7 @@
 							           displaySize="XL"
 							           backgroundColor="TileIcon"/>
               </content>
+              
           </Panel>
 
             <f:SimpleForm id="idUserSettingForm" width="auto" editable="true" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" maxContainerCols="2" labelSpanL="2" labelSpanM="2" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
@@ -38,6 +39,7 @@
         </content>
         <content>
               <f:SimpleForm  width="auto" editable="false" class="sapUiResponsiveMargin" layout="ResponsiveGridLayout" maxContainerCols="2" labelSpanL="2" labelSpanM="2" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+
                 <f:content>
                     <core:Title text="{labels>userProfile.profile.title}" level="H4"/>
                     <Label text="{labels>userProfile.name}" design="Bold" labelFor="idSetName"/>
@@ -48,6 +50,8 @@
                     <Text id="idSetCid" text="{app>/userProfile/cid}"/>
                     <Label text="{labels>userProfile.division}" design="Bold" labelFor="idSetDivision"/>
                     <Text id="idSetDivision" text="{app>/userProfile/division}"/>
+
+
                 </f:content>
             </f:SimpleForm>
         </content>

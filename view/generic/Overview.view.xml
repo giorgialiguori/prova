@@ -4,9 +4,44 @@
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    class="viewPadding">
+    class="viewPadding"
+    xmlns:tnt="sap.tnt"
+    xmlns:l="sap.ui.layout"
+    	height="100%">
 
-    <Page showNavButton="true"
+      <Page showNavButton="true"
+      navButtonPress="handleNavButtonPress"
+      titleLevel="H1">
+
+	<tnt:NavigationList
+		id="navigationList"
+		width="320px"
+		selectedKey="subItem3">
+		<tnt:NavigationListItem text="Item 1" key="rootItem1" icon="sap-icon://employee">
+			<tnt:NavigationListItem text="Home" />
+			<tnt:NavigationListItem text="2" />
+			<tnt:NavigationListItem text="3" id="subItemThree" key="subItem3" />
+			<tnt:NavigationListItem text="4" />
+		</tnt:NavigationListItem>
+
+		<tnt:NavigationListItem text="Item 2" icon="sap-icon://building">
+			<tnt:NavigationListItem text="Item 1" />
+			<tnt:NavigationListItem text="Item 2" />
+			<tnt:NavigationListItem text="Item 3" />
+			<tnt:NavigationListItem text="Item 4" />
+		</tnt:NavigationListItem>
+	</tnt:NavigationList>
+
+
+
+
+
+</Page>
+
+
+
+
+    <!--Page showNavButton="true"
     navButtonPress="handleNavButtonPress"
     title="{labels>genericOverviewPageTitle}"
     titleLevel="H1">
@@ -50,6 +85,6 @@
             </content>
 
         </Panel>
-    </Page>
+    </Page-->
 
 </mvc:View>

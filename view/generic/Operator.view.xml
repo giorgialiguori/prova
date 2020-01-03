@@ -80,7 +80,9 @@
         </HBox>
       </CustomListItem>
     </List>
-</Panel>
+    </Panel>
+
+
     <!--Panel
         expandable="true"
         expanded="true"

@@ -51,7 +51,7 @@ sap.ui.define(
 	        },
 
 	        getPersonalAreaMainPage: function(that) {
-	            var sPage = "idViewApp--idViewPersonalAreaMain";
+	            var sPage = "idViewApp--idViewPersonalPage";
 	            return sPage;
 	        },
 
